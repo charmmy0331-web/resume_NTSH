@@ -56,6 +56,15 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
 
+        /* ➕ 新增：設定卡片內圖片的樣式（讓照片自動適應卡片大小不拉伸變形） */
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
         .card a {
             text-decoration: none;
             color: #1565c0;
@@ -116,6 +125,8 @@
         </div>
 
         <div class="card">
+            <!-- ➕ 僅在此處新增這行圖片標籤 -->
+            <img src="{{ url_for('static', filename='images/28546.jpg') }}" alt="課外活動照片">
             <a href="/activities">🌟 課外活動</a>
             <p>拓展視野，累積多元學習與團隊合作經驗。</p>
         </div>
