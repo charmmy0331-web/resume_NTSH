@@ -1,160 +1,99 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>學習歷程檔案</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>課外活動</title>
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
 
-    <style>
-        body {
-            margin: 0;
-            font-family: "Noto Sans TC", sans-serif;
-            background: linear-gradient(135deg, #e3f2fd, #ffffff);
-        }
+body {
+background-color: #f4f6f8;
+color: #333;
+}
 
-        header {
-            background-color: #1565c0;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
+/* 頂部綠色 Banner */
+.header-banner {
+background-color: #4caf50;
+color: white;
+text-align: center;
+padding: 25px 0;
+font-size: 1.5rem;
+font-weight: bold;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
+/* 主要內容區 */
+.container {
+max-width: 800px;
+margin: 30px auto;
+padding: 0 20px;
+}
 
-        header p {
-            margin-top: 10px;
-            font-size: 16px;
-            opacity: 0.9;
-        }
+/* 活動區塊 */
+.activity-box {
+background: #ffffff;
+border-radius: 8px;
+padding: 25px;
+margin-bottom: 25px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-        }
+.activity-title {
+font-size: 1.25rem;
+font-weight: bold;
+color: #2e7d32;
+margin-bottom: 12px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
 
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+.activity-desc {
+font-size: 0.95rem;
+color: #555;
+margin-bottom: 15px;
+line-height: 1.6;
+}
 
-        .card {
-            background-color: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-
-        .card a {
-            text-decoration: none;
-            color: #1565c0;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .card p {
-            margin-top: 10px;
-            font-size: 14px;
-            color: #555;
-        }
-
-        .qrcode-section {
-            margin-top: 30px;
-            background-color: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-
-        .qrcode-section h3 {
-            margin-top: 0;
-            color: #1565c0;
-        }
-
-        .qrcode-section img {
-            max-width: 180px;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            color: #777;
-        }
-    </style>
+/* 照片樣式 */
+.activity-img {
+width: 100%;
+max-height: 450px;
+object-fit: cover;
+border-radius: 6px;
+}
+</style>
 </head>
-
 <body>
 
-<header>
-    <h1>新北高中 謝瑄芸</h1>
-    <p>高中生學習歷程檔案｜讀書計畫與成長紀錄</p>
-</header>
-
-<div class="container">
-    <div class="card-grid">
-
-        <div class="card">
-            <a href="/competition">🏆 競賽經驗</a>
-            <p>參與校內外競賽，培養問題解決與實作能力。</p>
-        </div>
-
-        <div class="card">
-            <a href="/activities">🌟 課外活動</a>
-            <p>拓展視野，累積多元學習與團隊合作經驗。</p>
-        </div>
-
-        <div class="card">
-            <a href="/leadership">👑 幹部經驗</a>
-            <p>擔任班級與校內幹部，培養領導與溝通能力。</p>
-        </div>
-
-        <div class="card">
-            <a href="/club">🎵 社團經驗</a>
-            <p>透過社團活動探索興趣與培養責任感。</p>
-        </div>
-
-        <div class="card">
-            <a href="/ask">📚 多元選修課程_字典</a>
-            <p>選修跨領域課程，強化專業與探索未來方向。</p>
-        </div>
-
-        <div class="card">
-            <a href="/stock">📚 多元選修課程_查詢股價</a>
-            <p>輸入股票代號（例如 2330），查詢該股票的相關資訊如前一天的收盤價</p>
-        </div>
-
-        <div class="card">
-            <a href="/ai">🤖 AI應用</a>
-            <p>結合人工智慧工具，提升學習效率與創作能力。</p>
-        </div>
-
-    </div>
-
-    <div class="qrcode-section">
-        <h3>📱 網站 QR Code</h3>
-        <img src="{{ url_for('static', filename='images/unnamed.jpg') }}" alt="網站 QR Code">
-    </div>
+<!-- 頂部綠色條 -->
+<div class="header-banner">
+課外活動
 </div>
 
-<footer>
-    © 2026 謝瑄芸 學習歷程檔案
-</footer>
+<div class="container">
+
+<!-- 第一個活動：苔球製作 -->
+<div class="activity-box">
+<div class="activity-title">🪴 社團活動：苔球製作</div>
+<div class="activity-desc">透過手作苔球製作，學習植物療癒與生態養護觀念。</div>
+<!-- 把檔名替換成你在 static/images/ 裡的照片全名 -->
+<img src="{{ url_for('static', filename='images/你的苔球照片檔名.jpg') }}" class="activity-img" alt="苔球製作">
+</div>
+
+<!-- 第二個活動（有需要可複製新增） -->
+<div class="activity-box">
+<div class="activity-title">🏀 社團活動：籃球比賽</div>
+<div class="activity-desc">參加校內籃球競賽，培養團隊合作默契與運動家精神。</div>
+<img src="{{ url_for('static', filename='images/unnamed.jpg') }}" class="activity-img" alt="籃球比賽">
+</div>
+
+</div>
 
 </body>
 </html>
