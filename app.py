@@ -102,6 +102,9 @@ def electives():
 @app.route('/ai')
 def ai():
     return render_template('ai.html')
+@app.route('/pikmin')
+def pikmin():
+    return render_template('pikmin.html')
 
 
 if __name__ == '__main__':
